@@ -1,1 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая безопасность: 5 правил защиты от мошенников</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
 
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">🛡️ Цифровая защита</div>
+            <div class="nav-links">
+                <button class="nav-link" data-target="rules">Правила</button>
+                <button class="nav-link" data-target="quiz">Тест</button>
+                <button class="nav-link" data-target="simulator">Симулятор</button>
+                <button class="nav-link" data-target="checklist">Проверка</button>
+                <button class="nav-link" data-target="contacts">Помощь</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="shield-icon">🛡️</span>
+            <h1>Цифровая безопасность:<br>5 правил защиты от мошенников</h1>
+            <p class="subtitle">Памятка для педагогов | День учителя 2026</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-target="rules">📖 Изучить правила</button>
+                <button class="btn btn-secondary" data-target="quiz">🎯 Пройти тест</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title fade-in">📊 Мошенничество в цифрах 2026</h2>
+            <p class="section-subtitle fade-in">Актуальные данные МВД и Банка России</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="90000">0</div>
+                    <div class="stat-label">кибермошенничеств за 4 месяца 2026</div>
+                    <span class="stat-trend down">↓ 25% к 2025</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="52" data-suffix=" млрд ₽">0</div>
+                    <div class="stat-label">ущерб за 4 месяца 2026</div>
+                    <span class="stat-trend down">↓ 19% к 2025</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="14.8" data-suffix=" млрд ₽" data-decimal="true">0</div>
+                    <div class="stat-label">похищено через банки за полугодие</div>
+                    <span class="stat-trend neutral">данные ЦБ</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="458" data-suffix=",7 тыс.">0</div>
+                    <div class="stat-label">успешных мошеннических операций во II квартале</div>
+                    <span class="stat-trend neutral">данные ЦБ</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="97" data-suffix="%">0</div>
+                    <div class="stat-label">атак — социальная инженерия</div>
+                    <span class="stat-trend up">основной метод</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="48" data-suffix=" лет">0</div>
+                    <div class="stat-label">средний возраст жертвы</div>
+                    <span class="stat-trend up">раньше было 40</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="22" data-suffix="%">0</div>
+                    <div class="stat-label">жертв — молодёжь 14-24 года</div>
+                    <span class="stat-trend up">почти четверть</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="54" data-suffix="%">0</div>
+                    <div class="stat-label">жертв — женщины</div>
+                    <span class="stat-trend up">против 46% мужчин</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="4" data-suffix="%">0</div>
+                    <div class="stat-label">атак с дипфейками</div>
+                    <span class="stat-trend up">~2 млрд ₽ ущерба</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="39" data-suffix="%">0</div>
+                    <div class="stat-label">рост подростков-мошенников</div>
+                    <span class="stat-trend up">за 8 месяцев 2026</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="3.7" data-suffix=" трлн ₽" data-decimal="true">0</div>
+                    <div class="stat-label">банки предотвратили за полугодие</div>
+                    <span class="stat-trend down">отличная работа</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" data-target="10" data-suffix=" млн ₽">0</div>
+                    <div class="stat-label">средний ущерб от атаки на бизнес</div>
+                    <span class="stat-trend up">было 3 млн ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rules-section" id="rules">
+        <div class="container">
+            <h2 class="section-title fade-in">5 правил цифровой безопасности</h2>
+            <p class="section-subtitle fade-in">Нажмите на правило, чтобы узнать подробности и примеры</p>
+            
+            <div class="rules-list">
+                <div class="rule-item fade-in">
+                    <div class="rule-header">
+                        <div class="rule-icon-box">📱</div>
+                        <div class="rule-info">
+                            <span class="rule-number">Правило №1</span>
+                            <div class="rule-title">Правило отбоя</div>
+                        </div>
+                        <div class="rule-toggle">+</div>
+                    </div>
+                    <div class="rule-content">
+                        <div class="rule-content-inner">
+                            <p><strong>Если вам звонят и просят деньги или личные данные — кладите трубку.</strong></p>
+                            <p>Не вступайте в разговор, не объясняйтесь и не оправдывайтесь. Мошенники — профессиональные манипуляторы: чем дольше вы говорите, тем сложнее им противостоять. В 2026 году 97% всех атак начинаются именно с телефонного звонка.</p>
+                            <div class="rule-example">
+                                <strong>💡 Как это работает:</strong> Мошенник представляется сотрудником банка, полиции или Госуслуг и сообщает о "проблеме" с вашим счётом. Его цель — заставить вас действовать быстро и без раздумий.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-in">
+                    <div class="rule-header">
+                        <div class="rule-icon-box">💳</div>
+                        <div class="rule-info">
+                            <span class="rule-number">Правило №2</span>
+                            <div class="rule-title">Правило обратной стороны</div>
+                        </div>
+                        <div class="rule-toggle">+</div>
+                    </div>
+                    <div class="rule-content">
+                        <div class="rule-content-inner">
+                            <p><strong>Если вам звонят из "банка" — положите трубку и позвоните сами по номеру на обратной стороне карты.</strong></p>
+                            <p>Это единственный надёжный способ проверить, действительно ли вам звонили из банка. Мошенники используют подменные номера, которые выглядят как настоящие. За первое полугодие 2026 года банки предотвратили хищения на сумму около 3,7 трлн рублей — во многом благодаря бдительности клиентов.</p>
+                            <div class="rule-example">
+                                <strong>💡 Важно:</strong> Никогда не перезванивайте по номеру, который вам продиктовал звонивший. Используйте только номер с карты или официального сайта банка.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-in">
+                    <div class="rule-header">
+                        <div class="rule-icon-box">🔒</div>
+                        <div class="rule-info">
+                            <span class="rule-number">Правило №3</span>
+                            <div class="rule-title">Правило цифрового отпечатка</div>
+                        </div>
+                        <div class="rule-toggle">+</div>
+                    </div>
+                    <div class="rule-content">
+                        <div class="rule-content-inner">
+                            <p><strong>Никогда и никому не диктуйте код из СМС.</strong></p>
+                            <p>Этот код — ваш цифровой отпечаток, ключ ко всем деньгам и данным. Банк никогда не попросит вас продиктовать код подтверждения — ни по телефону, ни в чате, ни при встрече. Во втором квартале 2026 года было зафиксировано 458,7 тысяч успешных мошеннических операций — большинство из них связаны с передачей кодов.</p>
+                            <div class="rule-example">
+                                <strong>💡 Запомните:</strong> Код из СМС = ключ от сейфа. Вы бы не отдали ключ от сейфа незнакомцу по телефону? Вот и код не отдавайте.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-in">
+                    <div class="rule-header">
+                        <div class="rule-icon-box">🔑</div>
+                        <div class="rule-info">
+                            <span class="rule-number">Правило №4</span>
+                            <div class="rule-title">Правило разных ключей</div>
+                        </div>
+                        <div class="rule-toggle">+</div>
+                    </div>
+                    <div class="rule-content">
+                        <div class="rule-content-inner">
+                            <p><strong>Используйте разные пароли для разных сервисов.</strong></p>
+                            <p>Если один пароль будет украден, мошенники не получат доступ ко всем вашим аккаунтам сразу. Это как разные ключи к разным дверям. Особенно важно для молодёжи — 22% всех жертв составляют люди 14-24 лет, которые часто используют один пароль везде.</p>
+                            <div class="rule-example">
+                                <strong>💡 Совет:</strong> Заведите блокнот для паролей и храните его дома в надёжном месте. Или используйте менеджер паролей — он запомнит всё за вас.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-in">
+                    <div class="rule-header">
+                        <div class="rule-icon-box">🛑</div>
+                        <div class="rule-info">
+                            <span class="rule-number">Правило №5</span>
+                            <div class="rule-title">Правило стоп-крана</div>
+                        </div>
+                        <div class="rule-toggle">+</div>
+                    </div>
+                    <div class="rule-content">
+                        <div class="rule-content-inner">
+                            <p><strong>Если вас торопят, пугают или давят на эмоции — это мошенники.</strong></p>
+                            <p>Настоящие организации работают спокойно, дают время подумать и принимают решения по закону. Любое давление, угрозы, срочность — красный флаг. В 2026 году появился новый тренд — использование дипфейков (около 4% случаев), но ущерб от них составил уже 2 млрд рублей. Мошенники научились подделывать не только голос, но и видео.</p>
+                            <div class="rule-example">
+                                <strong>💡 Фразы мошенников:</strong> "Решайте прямо сейчас!", "Через 5 минут счёт арестуют!", "Никому не говорите!", "Это конфиденциально!". Если слышите такое — кладите трубку.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+        <div class="container">
+            <h2 class="section-title fade-in">🎯 Проверьте себя</h2>
+            <p class="section-subtitle fade-in">Пройдите тест из 5 вопросов и узнайте, готовы ли вы распознать мошенника</p>
+            
+            <div class="quiz-container fade-in">
+                <div class="quiz-progress" id="quizProgress"></div>
+                <div id="quizContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="simulator-section" id="simulator">
+        <div class="container">
+            <h2 class="section-title fade-in">📞 Симулятор звонка мошенника</h2>
+            <p class="section-subtitle fade-in">Представьте, что вам звонят. Как вы поступите?</p>
+            
+            <div class="phone-simulator fade-in">
+                <div class="phone-screen">
+                    <div class="phone-caller">
+                        <div class="caller-avatar">👤</div>
+                        <div class="caller-name">+7 (800) 555-35-35</div>
+                        <div class="caller-status" id="callerStatus">📞 Входящий звонок...</div>
+                    </div>
+                    <div class="phone-dialog" id="phoneDialog">
+                        <em>Нажмите "Ответить", чтобы начать разговор</em>
+                    </div>
+                    <div class="phone-buttons">
+                        <button class="phone-btn phone-btn-hangup" id="btnHangup" title="Положить трубку">📞</button>
+                        <button class="phone-btn phone-btn-answer" id="btnAnswer" title="Ответить">📞</button>
+                    </div>
+                </div>
+            </div>
+            <div class="simulator-result" id="simulatorResult"></div>
+        </div>
+    </section>
+
+    <section class="checklist-section" id="checklist">
+        <div class="container">
+            <h2 class="section-title fade-in">✅ Проверьте свою защиту</h2>
+            <p class="section-subtitle fade-in">Отметьте пункты, которые вы уже выполняете. Чем больше — тем безопаснее!</p>
+            
+            <div class="checklist-container fade-in">
+                <div class="checklist-progress">
+                    <div class="checklist-progress-bar" id="checklistBar"></div>
+                </div>
+                <div class="checklist-status" id="checklistStatus">Выполнено: 0 из 8</div>
+                <div id="checklistItems"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scams-section" id="scams">
+        <div class="container">
+            <h2 class="section-title fade-in">⚠️ Примеры мошеннических схем</h2>
+            <p class="section-subtitle fade-in">Нажмите на схему, чтобы узнать подробности и признаки обмана</p>
+            
+            <div class="scam-card fade-in">
+                <div class="scam-header">
+                    <span class="scam-icon">📩</span>
+                    <span class="scam-title">СМС от "банка" с фишинговой ссылкой</span>
+                    <span class="scam-toggle">+</span>
+                </div>
+                <div class="scam-content">
+                    <div class="scam-content-inner">
+                        <p>Вам приходит СМС якобы от банка о подозрительной операции и ссылкой для "подтверждения". Ссылка ведёт на поддельный сайт, который выглядит как настоящий банк.</p>
+                        <div class="scam-signs">
+                            <strong>Признаки обмана:</strong>
+                            <ul>
+                                <li>Ссылка ведёт на странный адрес (не официальный сайт банка)</li>
+                                <li>Вас торопят "срочно подтвердить операцию"</li>
+                                <li>СМС пришло в необычное время</li>
+                                <li>Просят ввести пароль, CVC-код или код из СМС</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scam-card fade-in">
+                <div class="scam-header">
+                    <span class="scam-icon">🛒</span>
+                    <span class="scam-title">"Покупатель с Авито" просит код из СМС</span>
+                    <span class="scam-toggle">+</span>
+                </div>
+                <div class="scam-content">
+                    <div class="scam-content-inner">
+                        <p>Покупатель на сайте объявлений хочет купить ваш товар и просит продиктовать код из СМС для "получения денег". На самом деле это код входа в ваш аккаунт или перевода денег мошеннику.</p>
+                        <div class="scam-signs">
+                            <strong>Признаки обмана:</strong>
+                            <ul>
+                                <li>Покупатель торопит и не хочет общаться в чате сайта</li>
+                                <li>Просит перейти по "специальной ссылке" для получения денег</li>
+                                <li>Просит код из СМС "для подтверждения"</li>
+                                <li>Предлагает сумму выше вашей цены</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scam-card fade-in">
+                <div class="scam-header">
+                    <span class="scam-icon">🚔</span>
+                    <span class="scam-title">"Штраф ГИБДД" с угрозой ареста счёта</span>
+                    <span class="scam-toggle">+</span>
+                </div>
+                <div class="scam-content">
+                    <div class="scam-content-inner">
+                        <p>Вам звонят "из полиции" или "ГИБДД" и сообщают о якобы оформленном на ваше имя штрафе. Угрожают арестом счёта, если не оплатите немедленно.</p>
+                        <div class="scam-signs">
+                            <strong>Признаки обмана:</strong>
+                            <ul>
+                                <li>Настоящие штрафы приходят по почте или через Госуслуги</li>
+                                <li>Полиция не звонит с требованиями срочной оплаты</li>
+                                <li>Вас пугают арестом и торопят с решением</li>
+                                <li>Просят перевести деньги на "безопасный счёт"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title fade-in">❓ Частые вопросы</h2>
+            <p class="section-subtitle fade-in">Ответы на самые важные вопросы о цифровой безопасности</p>
+            
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Что делать, если я уже перевёл деньги мошенникам?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <strong>Действуйте немедленно:</strong><br>
+                            1. Позвоните в банк по номеру на обратной стороне карты и сообщите о мошенничестве<br>
+                            2. Напишите заявление в полицию (можно через Госуслуги)<br>
+                            3. Сохраните все доказательства: СМС, номера телефонов, скриншоты<br>
+                            4. Чем быстрее обратитесь — тем больше шансов вернуть деньги
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Как отличить настоящий звонок из банка от мошеннического?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <strong>Банк НИКОГДА не просит:</strong><br>
+                            ❌ Коды из СМС<br>
+                            ❌ CVC-код карты (три цифры на обороте)<br>
+                            ❌ Пароли от Госуслуг или интернет-банка<br>
+                            ❌ Перевести деньги на "безопасный счёт"<br>
+                            ❌ Установить какое-либо приложение по их указанию<br><br>
+                            <strong>Если сомневаетесь — положите трубку и позвоните в банк сами по номеру с карты.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Как придумать надёжный пароль?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <strong>Хороший пароль — это фраза, которую легко запомнить, но сложно угадать:</strong><br>
+                            ✅ Возьмите строчку из любимой песни или стихотворения<br>
+                            ✅ Замените буквы на цифры и символы<br>
+                            ✅ Добавьте год или важное число<br><br>
+                            <strong>Пример:</strong> "Я помню чудное мгновенье" → <code>YP_chMgn_1825!</code><br><br>
+                            И обязательно разные пароли для разных сервисов!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Безопасно ли оплачивать покупки в интернете?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <strong>Да, если соблюдать правила:</strong><br>
+                            ✅ Используйте только знакомые, проверенные сайты<br>
+                            ✅ Проверяйте адрес сайта (должен начинаться с https://)<br>
+                            ✅ Для покупок используйте отдельную карту с небольшим лимитом<br>
+                            ✅ Подключите СМС-уведомления о всех операциях<br>
+                            ❌ Не совершайте покупки через общественный Wi-Fi
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Куда сообщить о мошенниках?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <strong>Обращайтесь в следующие органы:</strong><br>
+                            📞 <strong>112</strong> — экстренные службы<br>
+                            📞 <strong>102</strong> — полиция<br>
+                            🌐 <strong>МВД России</strong> — подать заявление онлайн через сайт мвд.рф<br>
+                            🌐 <strong>Госуслуги</strong> — заявление о преступлении<br>
+                            📞 <strong>Ваш банк</strong> — по номеру на обратной стороне карты
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts-section" id="contacts">
+        <div class="container">
+            <h2 class="section-title fade-in">📞 Экстренные контакты</h2>
+            <p class="section-subtitle fade-in">Сохраните эти номера — они могут спасти ваши деньги</p>
+            
+            <div class="contacts-grid">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">🚨</div>
+                    <div class="contact-name">Экстренные службы</div>
+                    <a href="tel:112" class="contact-number">112</a>
+                    <div class="contact-desc">Круглосуточно, бесплатно</div>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">👮</div>
+                    <div class="contact-name">Полиция</div>
+                    <a href="tel:102" class="contact-number">102</a>
+                    <div class="contact-desc">Сообщить о мошенничестве</div>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">🏦</div>
+                    <div class="contact-name">Ваш банк</div>
+                    <div class="contact-number">На карте</div>
+                    <div class="contact-desc">Номер на обратной стороне карты</div>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-name">Госуслуги</div>
+                    <a href="https://gosuslugi.ru" class="contact-number" target="_blank" rel="noopener">gosuslugi.ru</a>
+                    <div class="contact-desc">Заявление онлайн</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <span class="footer-emoji">🎓</span>
+            <h3>С Днём учителя!</h3>
+            <p>Берегите себя и свои данные</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" title="Наверх">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
